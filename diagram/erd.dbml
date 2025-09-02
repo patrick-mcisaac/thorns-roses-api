@@ -1,0 +1,22 @@
+Table flowers {
+    id int [pk, increment]
+    color varchar
+    species varchar
+}
+
+Table nurseries {
+    id int [pk, increment]
+    name varchar
+}
+
+Table distributors {
+    id int [pk, increment]
+    name varchar
+    markup float
+}
+
+Table retailers {
+    id int [pk, increment]
+    name varchar
+    address varchar
+}
