@@ -4,9 +4,24 @@ Table flowers {
     species varchar
 }
 
+Table flowerNurseryBridge {
+    id int [pk, increment]
+    flowerId int [ref: > flowers.id]
+    nurseryId int [ref: > nurseries.id]
+    price float
+}
+
+
+
 Table nurseries {
     id int [pk, increment]
     name varchar
+}
+
+Table nurseryDistributorBridge {
+    id int [pk, increment]
+    nurseryId int [ref: > nurseries.id]
+    distributorId int [ref: > distributors.id]
 }
 
 Table distributors {
@@ -19,4 +34,6 @@ Table retailers {
     id int [pk, increment]
     name varchar
     address varchar
+    markup float
+    distributorId int [ref: > distributors.id]
 }

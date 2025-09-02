@@ -1,6 +1,223 @@
 {
-	"flowers": [],
-	"nurseries": [],
-	"distributors": [],
-	"retailers": []
+	"flowers": [
+		{ "id": 1, "color": "Red", "species": "Rosa rubiginosa" },
+		{ "id": 2, "color": "White", "species": "Rosa alba" },
+		{ "id": 3, "color": "Pink", "species": "Rosa gallica" },
+		{ "id": 4, "color": "Yellow", "species": "Rosa foetida" },
+		{ "id": 5, "color": "Purple", "species": "Lavandula angustifolia" },
+		{ "id": 6, "color": "White", "species": "Chrysanthemum morifolium" },
+		{ "id": 7, "color": "Orange", "species": "Calendula officinalis" },
+		{ "id": 8, "color": "Blue", "species": "Delphinium elatum" },
+		{ "id": 9, "color": "Red", "species": "Tulipa gesneriana" },
+		{ "id": 10, "color": "Yellow", "species": "Tulipa gesneriana" },
+		{ "id": 11, "color": "Purple", "species": "Tulipa gesneriana" },
+		{ "id": 12, "color": "White", "species": "Lilium candidum" },
+		{ "id": 13, "color": "Pink", "species": "Dianthus caryophyllus" },
+		{ "id": 14, "color": "Red", "species": "Dianthus caryophyllus" },
+		{ "id": 15, "color": "Orange", "species": "Lilium bulbiferum" },
+		{ "id": 16, "color": "Blue", "species": "Iris germanica" },
+		{ "id": 17, "color": "Yellow", "species": "Narcissus pseudonarcissus" },
+		{ "id": 18, "color": "White", "species": "Narcissus poeticus" },
+		{ "id": 19, "color": "Red", "species": "Papaver rhoeas" },
+		{ "id": 20, "color": "Purple", "species": "Viola tricolor" }
+	],
+	"nurseries": [
+		{ "id": 1, "name": "Bloom & Blossom Nursery" },
+		{ "id": 2, "name": "Garden Paradise Co." },
+		{ "id": 3, "name": "Petal Perfect Farms" },
+		{ "id": 4, "name": "Green Thumb Gardens" },
+		{ "id": 5, "name": "Sunrise Flower Farm" },
+		{ "id": 6, "name": "Heritage Rose Gardens" },
+		{ "id": 7, "name": "Mountain View Nursery" },
+		{ "id": 8, "name": "Coastal Bloom Nursery" },
+		{ "id": 9, "name": "Valley Flower Farm" },
+		{ "id": 10, "name": "Woodland Gardens" }
+	],
+	"distributors": [
+		{ "id": 1, "name": "FlowerMax Distribution", "markup": 1.35 },
+		{ "id": 2, "name": "Premier Floral Supply", "markup": 1.42 },
+		{ "id": 3, "name": "Garden Logistics Inc.", "markup": 1.28 },
+		{ "id": 4, "name": "BloomCorp Wholesale", "markup": 1.38 },
+		{ "id": 5, "name": "National Flower Network", "markup": 1.45 },
+		{ "id": 6, "name": "Regional Garden Supply", "markup": 1.32 },
+		{ "id": 7, "name": "Metro Floral Distribution", "markup": 1.4 }
+	],
+	"retailers": [
+		{
+			"id": 1,
+			"name": "Petals & Stems",
+			"address": "123 Main St, Downtown",
+			"distributorId": 1,
+			"markup": 2.1
+		},
+		{
+			"id": 2,
+			"name": "The Flower Shop",
+			"address": "456 Oak Ave, Midtown",
+			"distributorId": 1,
+			"markup": 1.9
+		},
+		{
+			"id": 3,
+			"name": "Blooming Beautiful",
+			"address": "789 Pine Rd, Westside",
+			"distributorId": 2,
+			"markup": 2.3
+		},
+		{
+			"id": 4,
+			"name": "Garden Gate Florist",
+			"address": "321 Elm St, Eastside",
+			"distributorId": 2,
+			"markup": 2.0
+		},
+		{
+			"id": 5,
+			"name": "Rose & Lily Co.",
+			"address": "654 Cedar Ln, Northside",
+			"distributorId": 3,
+			"markup": 1.85
+		},
+		{
+			"id": 6,
+			"name": "Floral Expressions",
+			"address": "987 Birch Dr, Southside",
+			"distributorId": 3,
+			"markup": 2.25
+		},
+		{
+			"id": 7,
+			"name": "The Petal Parlor",
+			"address": "147 Maple Way, Center City",
+			"distributorId": 4,
+			"markup": 2.4
+		},
+		{
+			"id": 8,
+			"name": "Blossom Boutique",
+			"address": "258 Willow St, Riverside",
+			"distributorId": 4,
+			"markup": 1.95
+		},
+		{
+			"id": 9,
+			"name": "Flower Power",
+			"address": "369 Spruce Ave, Hillside",
+			"distributorId": 5,
+			"markup": 2.2
+		},
+		{
+			"id": 10,
+			"name": "Garden Dreams",
+			"address": "741 Aspen Ct, Valley View",
+			"distributorId": 5,
+			"markup": 2.15
+		},
+		{
+			"id": 11,
+			"name": "The Bloom Room",
+			"address": "852 Cherry Blvd, Garden District",
+			"distributorId": 6,
+			"markup": 2.05
+		},
+		{
+			"id": 12,
+			"name": "Petite Petals",
+			"address": "963 Poplar St, Old Town",
+			"distributorId": 6,
+			"markup": 1.8
+		},
+		{
+			"id": 13,
+			"name": "Fresh Flowers Daily",
+			"address": "159 Dogwood Dr, New Town",
+			"distributorId": 7,
+			"markup": 2.35
+		},
+		{
+			"id": 14,
+			"name": "The Flower Market",
+			"address": "357 Magnolia Ave, Shopping Plaza",
+			"distributorId": 7,
+			"markup": 2.0
+		}
+	],
+	"flowerNurseryBridge": [
+		{ "id": 1, "flowerId": 1, "nurseryId": 1, "price": 2.5 },
+		{ "id": 2, "flowerId": 2, "nurseryId": 1, "price": 2.25 },
+		{ "id": 3, "flowerId": 3, "nurseryId": 1, "price": 2.4 },
+		{ "id": 4, "flowerId": 4, "nurseryId": 1, "price": 2.8 },
+		{ "id": 5, "flowerId": 9, "nurseryId": 1, "price": 1.75 },
+		{ "id": 6, "flowerId": 10, "nurseryId": 1, "price": 1.85 },
+		{ "id": 7, "flowerId": 11, "nurseryId": 1, "price": 1.9 },
+		{ "id": 8, "flowerId": 5, "nurseryId": 2, "price": 3.2 },
+		{ "id": 9, "flowerId": 6, "nurseryId": 2, "price": 2.1 },
+		{ "id": 10, "flowerId": 7, "nurseryId": 2, "price": 1.95 },
+		{ "id": 11, "flowerId": 8, "nurseryId": 2, "price": 3.5 },
+		{ "id": 12, "flowerId": 16, "nurseryId": 2, "price": 2.6 },
+		{ "id": 13, "flowerId": 19, "nurseryId": 2, "price": 1.4 },
+		{ "id": 14, "flowerId": 20, "nurseryId": 2, "price": 1.65 },
+		{ "id": 15, "flowerId": 12, "nurseryId": 3, "price": 4.2 },
+		{ "id": 16, "flowerId": 15, "nurseryId": 3, "price": 3.8 },
+		{ "id": 17, "flowerId": 13, "nurseryId": 3, "price": 2.3 },
+		{ "id": 18, "flowerId": 14, "nurseryId": 3, "price": 2.35 },
+		{ "id": 19, "flowerId": 17, "nurseryId": 3, "price": 2.0 },
+		{ "id": 20, "flowerId": 18, "nurseryId": 3, "price": 2.15 },
+		{ "id": 21, "flowerId": 1, "nurseryId": 4, "price": 2.45 },
+		{ "id": 22, "flowerId": 5, "nurseryId": 4, "price": 3.25 },
+		{ "id": 23, "flowerId": 9, "nurseryId": 4, "price": 1.8 },
+		{ "id": 24, "flowerId": 13, "nurseryId": 4, "price": 2.25 },
+		{ "id": 25, "flowerId": 16, "nurseryId": 4, "price": 2.55 },
+		{ "id": 26, "flowerId": 20, "nurseryId": 4, "price": 1.7 },
+		{ "id": 27, "flowerId": 9, "nurseryId": 5, "price": 1.65 },
+		{ "id": 28, "flowerId": 10, "nurseryId": 5, "price": 1.7 },
+		{ "id": 29, "flowerId": 11, "nurseryId": 5, "price": 1.75 },
+		{ "id": 30, "flowerId": 17, "nurseryId": 5, "price": 1.95 },
+		{ "id": 31, "flowerId": 18, "nurseryId": 5, "price": 2.05 },
+		{ "id": 32, "flowerId": 1, "nurseryId": 6, "price": 2.75 },
+		{ "id": 33, "flowerId": 2, "nurseryId": 6, "price": 2.5 },
+		{ "id": 34, "flowerId": 3, "nurseryId": 6, "price": 2.65 },
+		{ "id": 35, "flowerId": 4, "nurseryId": 6, "price": 3.0 },
+		{ "id": 36, "flowerId": 5, "nurseryId": 7, "price": 3.15 },
+		{ "id": 37, "flowerId": 8, "nurseryId": 7, "price": 3.45 },
+		{ "id": 38, "flowerId": 16, "nurseryId": 7, "price": 2.65 },
+		{ "id": 39, "flowerId": 19, "nurseryId": 7, "price": 1.35 },
+		{ "id": 40, "flowerId": 20, "nurseryId": 7, "price": 1.6 },
+		{ "id": 41, "flowerId": 6, "nurseryId": 8, "price": 2.2 },
+		{ "id": 42, "flowerId": 7, "nurseryId": 8, "price": 2.05 },
+		{ "id": 43, "flowerId": 12, "nurseryId": 8, "price": 4.5 },
+		{ "id": 44, "flowerId": 15, "nurseryId": 8, "price": 3.95 },
+		{ "id": 45, "flowerId": 9, "nurseryId": 9, "price": 1.7 },
+		{ "id": 46, "flowerId": 10, "nurseryId": 9, "price": 1.75 },
+		{ "id": 47, "flowerId": 11, "nurseryId": 9, "price": 1.8 },
+		{ "id": 48, "flowerId": 17, "nurseryId": 9, "price": 2.1 },
+		{ "id": 49, "flowerId": 18, "nurseryId": 9, "price": 2.2 },
+		{ "id": 50, "flowerId": 19, "nurseryId": 9, "price": 1.45 },
+		{ "id": 51, "flowerId": 20, "nurseryId": 10, "price": 1.75 },
+		{ "id": 52, "flowerId": 16, "nurseryId": 10, "price": 2.7 },
+		{ "id": 53, "flowerId": 8, "nurseryId": 10, "price": 3.6 },
+		{ "id": 54, "flowerId": 6, "nurseryId": 10, "price": 2.3 }
+	],
+	"nurseryDistributorBridge": [
+		{ "id": 1, "nurseryId": 1, "distributorId": 1 },
+		{ "id": 2, "nurseryId": 1, "distributorId": 2 },
+		{ "id": 3, "nurseryId": 2, "distributorId": 1 },
+		{ "id": 4, "nurseryId": 2, "distributorId": 3 },
+		{ "id": 5, "nurseryId": 3, "distributorId": 2 },
+		{ "id": 6, "nurseryId": 3, "distributorId": 4 },
+		{ "id": 7, "nurseryId": 4, "distributorId": 3 },
+		{ "id": 8, "nurseryId": 4, "distributorId": 5 },
+		{ "id": 9, "nurseryId": 5, "distributorId": 1 },
+		{ "id": 10, "nurseryId": 5, "distributorId": 4 },
+		{ "id": 11, "nurseryId": 6, "distributorId": 2 },
+		{ "id": 12, "nurseryId": 6, "distributorId": 6 },
+		{ "id": 13, "nurseryId": 7, "distributorId": 3 },
+		{ "id": 14, "nurseryId": 7, "distributorId": 7 },
+		{ "id": 15, "nurseryId": 8, "distributorId": 4 },
+		{ "id": 16, "nurseryId": 8, "distributorId": 6 },
+		{ "id": 17, "nurseryId": 9, "distributorId": 5 },
+		{ "id": 18, "nurseryId": 9, "distributorId": 7 },
+		{ "id": 19, "nurseryId": 10, "distributorId": 6 },
+		{ "id": 20, "nurseryId": 10, "distributorId": 7 }
+	]
 }
